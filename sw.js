@@ -1,4 +1,4 @@
-const CACHE_NAME = "earth-mission-ar-v2";
+const CACHE_NAME = "earth-mission-ar-v3";
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const withBasePath = (path) => {
   if (!BASE_PATH) return path;
