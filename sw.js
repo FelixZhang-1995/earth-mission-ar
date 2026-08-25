@@ -1,4 +1,10 @@
 const CACHE_NAME = "earth-mission-ar-v2";
+const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
+const withBasePath = (path) => {
+  if (!BASE_PATH) return path;
+  if (path === "/") return `${BASE_PATH}/`;
+  return `${BASE_PATH}${path}`;
+};
 const PRECACHE_URLS = [
   "/",
   "/activate",
@@ -36,7 +42,7 @@ const PRECACHE_URLS = [
   "/vendor/mindar/controller-mGt1s8dJ.js",
   "/vendor/mindar/ui-fBadYuor.js",
   "/globe.svg",
-];
+].map(withBasePath);
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -80,7 +86,7 @@ async function networkFirst(request) {
     }
     return response;
   } catch {
-    return (await caches.match(request)) || (await caches.match("/")) || Response.error();
+    return (await caches.match(request)) || (await caches.match(withBasePath("/"))) || Response.error();
   }
 }
 
