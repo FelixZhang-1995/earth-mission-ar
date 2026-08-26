@@ -1,4 +1,4 @@
-const CACHE_NAME = "earth-mission-ar-v4";
+const CACHE_NAME = "earth-mission-ar-v5";
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const withBasePath = (path) => {
   if (!BASE_PATH) return path;
@@ -44,10 +44,10 @@ const PRECACHE_URLS = [
   "/vendor/mindar/controller-mGt1s8dJ.js",
   "/vendor/mindar/ui-fBadYuor.js",
   "/brand/beijing-planetarium-logo.png",
-  "/spirits/yaohe.png",
-  "/spirits/qihuan.png",
-  "/spirits/suixing.png",
-  "/spirits/maideng.png",
+  "/spirits/yaohe.webp",
+  "/spirits/qihuan.webp",
+  "/spirits/suixing.webp",
+  "/spirits/maideng.webp",
   "/globe.svg",
 ].map(withBasePath);
 
