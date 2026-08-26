@@ -1,4 +1,4 @@
-const CACHE_NAME = "earth-mission-ar-v3";
+const CACHE_NAME = "earth-mission-ar-v4";
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const withBasePath = (path) => {
   if (!BASE_PATH) return path;
@@ -9,6 +9,8 @@ const PRECACHE_URLS = [
   "/",
   "/activate",
   "/map",
+  "/scan",
+  "/spirits",
   "/admin",
   "/qr",
   "/profile/active",
@@ -41,6 +43,11 @@ const PRECACHE_URLS = [
   "/vendor/mindar/mindar-image.prod.js",
   "/vendor/mindar/controller-mGt1s8dJ.js",
   "/vendor/mindar/ui-fBadYuor.js",
+  "/brand/beijing-planetarium-logo.png",
+  "/spirits/yaohe.png",
+  "/spirits/qihuan.png",
+  "/spirits/suixing.png",
+  "/spirits/maideng.png",
   "/globe.svg",
 ].map(withBasePath);
 
@@ -94,6 +101,11 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
+  if (
+    url.searchParams.has("_rsc") ||
+    event.request.headers.has("rsc") ||
+    event.request.headers.has("next-router-prefetch")
+  ) return;
 
   if (event.request.mode === "navigate") {
     event.respondWith(networkFirst(event.request));
@@ -105,5 +117,5 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  event.respondWith(networkFirst(event.request));
+  return;
 });
