@@ -2,5 +2,5 @@
 2:I[4387,["602","static/chunks/602-0ef2c323df0fdff2.js","476","static/chunks/476-339acc4af2b3804b.js","650","static/chunks/650-96fa648f8ea939c5.js","168","static/chunks/168-1b0964f115c67df7.js","233","static/chunks/233-a997b1690d6f7f56.js","387","static/chunks/387-b4aec2c455f8e844.js","175","static/chunks/app/mission/%5BmissionId%5D/page-fbbbb96eac27f9ee.js"],"MissionClient"]
 3:I[484,[],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[[["$","$L2","Z4-CIV-16",{"missionId":"Z4-CIV-16"}]],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"72uWg8TPmIfve7XC10tdx"}
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2","Z4-CIV-16",{"missionId":"Z4-CIV-16"}]],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"J-0hFiuWpG3aB5EsAWDPO"}
 5:null
