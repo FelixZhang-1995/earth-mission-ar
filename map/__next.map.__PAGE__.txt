@@ -2,5 +2,5 @@
 2:I[2995,["602","static/chunks/602-0ef2c323df0fdff2.js","476","static/chunks/476-339acc4af2b3804b.js","7","static/chunks/7-e6518955aae8cd21.js","168","static/chunks/168-1b0964f115c67df7.js","995","static/chunks/995-e1848a4732f28742.js","823","static/chunks/app/map/page-ff17081291105d6d.js"],"MapClient"]
 3:I[484,[],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"W_skyGNMkVSNR_N1vsGlF"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EjqJPS7DIh6GbwBPafdOF"}
 5:null
