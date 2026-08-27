@@ -1,4 +1,4 @@
 :HL["/earth-mission-ar/_next/static/media/22a5144ee8d83bca-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/earth-mission-ar/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/earth-mission-ar/_next/static/css/d6368300b35c9808.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"ar","param":null,"prefetchHints":0,"slots":{"children":{"name":"missionId","param":{"type":"d","key":"Z1-LAYER-03","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"DhWsxX0K_tiOgBQ9-1ONW"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"ar","param":null,"prefetchHints":0,"slots":{"children":{"name":"missionId","param":{"type":"d","key":"Z1-LAYER-03","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"W_skyGNMkVSNR_N1vsGlF"}
