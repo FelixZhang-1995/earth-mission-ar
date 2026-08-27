@@ -1,5 +1,8 @@
 self.__PRECACHE_MANIFEST=["/_next/static/chunks/168-1b0964f115c67df7.js","/_next/static/chunks/233-a997b1690d6f7f56.js","/_next/static/chunks/387-b4aec2c455f8e844.js","/_next/static/chunks/476-339acc4af2b3804b.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/650-96fa648f8ea939c5.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/app/activate/page-180c7de9e90c23ee.js","/_next/static/chunks/app/layout-49ca6fa9a364a24b.js","/_next/static/chunks/app/map/page-54e0eef8d2a7a526.js","/_next/static/chunks/app/mission/[missionId]/page-fbbbb96eac27f9ee.js","/_next/static/chunks/app/page-15eeb428f9cae579.js","/_next/static/chunks/app/profile/[sessionId]/page-cfbdf2c2ddeeb50f.js","/_next/static/chunks/app/scan/page-6a58f84db994ec7f.js","/_next/static/chunks/app/spirits/page-380dd2ac5aa8c5ca.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-e0cb09578c716e57.js","/_next/static/css/e0165062975bb9f5.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
-const CACHE_NAME = "earth-mission-ar-v21";
+const CACHE_PREFIX = "earth-mission-ar-v";
+const CACHE_VERSION = 22;
+const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
+const RETAINED_CACHE_GENERATIONS = 2;
 const GENERATED_PRECACHE_URLS = self.__PRECACHE_MANIFEST ?? [];
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const withBasePath = (path) => {
@@ -72,7 +75,18 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
+      .then((keys) => {
+        const previousCaches = keys
+          .filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME)
+          .sort((a, b) => Number(b.slice(CACHE_PREFIX.length)) - Number(a.slice(CACHE_PREFIX.length)))
+          .slice(0, RETAINED_CACHE_GENERATIONS - 1);
+        const retainedCaches = new Set([CACHE_NAME, ...previousCaches]);
+        return Promise.all(
+          keys
+            .filter((key) => key.startsWith(CACHE_PREFIX) && !retainedCaches.has(key))
+            .map((key) => caches.delete(key)),
+        );
+      })
       .then(() => self.clients.claim()),
   );
 });
