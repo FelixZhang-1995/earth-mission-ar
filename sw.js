@@ -1,6 +1,6 @@
-self.__PRECACHE_MANIFEST=["/_next/static/chunks/137-50c8118f49696470.js","/_next/static/chunks/168-1b0964f115c67df7.js","/_next/static/chunks/4-ef777c68f39f623b.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/526-ca5c152d2e7b8fbe.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/663-863aad4f88715c08.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/805-8228db14f3f65d7e.js","/_next/static/chunks/app/activate/page-ab6d0cfcb5541b6a.js","/_next/static/chunks/app/layout-49ca6fa9a364a24b.js","/_next/static/chunks/app/map/page-768f1a561e5b38d2.js","/_next/static/chunks/app/mission/[missionId]/page-062eeb24b860cbea.js","/_next/static/chunks/app/page-1450668252512409.js","/_next/static/chunks/app/profile/[sessionId]/page-dd63c1c6515932c0.js","/_next/static/chunks/app/scan/page-e040017232464ea2.js","/_next/static/chunks/app/spirits/page-07123cd953820879.js","/_next/static/chunks/b536a0f1-c5b57b7e6ff4dac8.js","/_next/static/chunks/bd904a5c-ad7f95bc21f7a5e3.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-dcb3ca3042170d98.js","/_next/static/css/ed34331e6a4a06e5.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
+self.__PRECACHE_MANIFEST=["/_next/static/chunks/137-50c8118f49696470.js","/_next/static/chunks/168-2f631585572a4a8e.js","/_next/static/chunks/4-ef777c68f39f623b.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/526-ca5c152d2e7b8fbe.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/654-9a11a809ba20cae1.js","/_next/static/chunks/663-73817e8c5b5c68d9.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/805-8228db14f3f65d7e.js","/_next/static/chunks/app/activate/page-ab6d0cfcb5541b6a.js","/_next/static/chunks/app/layout-49ca6fa9a364a24b.js","/_next/static/chunks/app/map/page-768f1a561e5b38d2.js","/_next/static/chunks/app/mission/[missionId]/page-062eeb24b860cbea.js","/_next/static/chunks/app/page-1450668252512409.js","/_next/static/chunks/app/profile/[sessionId]/page-dd63c1c6515932c0.js","/_next/static/chunks/app/scan/page-e040017232464ea2.js","/_next/static/chunks/app/spirits/page-b561e3aad63cdc27.js","/_next/static/chunks/b536a0f1-c5b57b7e6ff4dac8.js","/_next/static/chunks/bd904a5c-ad7f95bc21f7a5e3.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-1e1609a5e4897827.js","/_next/static/css/f363585fb7f73293.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
 const CACHE_PREFIX = "earth-mission-ar-v";
-const CACHE_VERSION = 24;
+const CACHE_VERSION = 25;
 const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
 const RETAINED_CACHE_GENERATIONS = 2;
 const GENERATED_PRECACHE_URLS = self.__PRECACHE_MANIFEST ?? [];
@@ -23,6 +23,7 @@ const CORE_PRECACHE_URLS = [
   "/brand/beijing-planetarium-logo.png",
   "/spirits/yaohe.webp",
   "/spirits/qihuan.webp",
+  "/spirits/models/qihuan.glb",
   "/spirits/suixing.webp",
   "/spirits/maideng.webp",
   "/globe.svg",
