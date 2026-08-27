@@ -1,0 +1,204 @@
+{
+  "generator": "Kokoro-82M",
+  "modelSource": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "license": "Apache-2.0",
+  "voice": "zf_xiaoxiao",
+  "modelSha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voiceSha256": "cfaf6f2ded1ee56f1ff94fcd2b0e6cdf32e5b794bdc05b44e7439d44aef5887c",
+  "sampleRate": 24000,
+  "bitRateKbps": 64,
+  "tracks": [
+    {
+      "missionId": "Z1-SUN-01",
+      "src": "/audio/guides/z1-sun-01.mp3",
+      "durationSeconds": 34.23,
+      "bytes": 274604,
+      "sha256": "5b79b9994a72617c20c35ad80ecb750c3c94c15f14414f0e4bd83889d4410f11",
+      "textSha256": "60a64604bcd14ddebf4821b3db32d85adcb1c68f6459187a73c3fb3e83e650d6"
+    },
+    {
+      "missionId": "Z1-HAB-02",
+      "src": "/audio/guides/z1-hab-02.mp3",
+      "durationSeconds": 29.23,
+      "bytes": 234476,
+      "sha256": "0ecaf88f88414053b82b3b0f666a2e96584b6f61a4c78386c61be57de444f945",
+      "textSha256": "edc5d329445717b094a34d24a67c01317897bf5da8d55f83f5dc2fb1a88730f7"
+    },
+    {
+      "missionId": "Z1-LAYER-03",
+      "src": "/audio/guides/z1-layer-03.mp3",
+      "durationSeconds": 27.95,
+      "bytes": 224300,
+      "sha256": "aa55bea366ab5d449160a829068f02219f5a3005372174d7193c71da3ec898ea",
+      "textSha256": "29b83f8102567bc03fc39b29ab20dc18285b69c72cff009a9b68e73253cd685a"
+    },
+    {
+      "missionId": "Z1-AST-04",
+      "src": "/audio/guides/z1-ast-04.mp3",
+      "durationSeconds": 29.12,
+      "bytes": 233708,
+      "sha256": "230e04c12d4dfd178c3c18a1225f94e6f48e32df953f55a6348ec1c3444a5ab7",
+      "textSha256": "1e7f4989ed98f6b6dd6acc331a446df9873c0bc80c0d70c5fa0f78cbf05e8c75"
+    },
+    {
+      "missionId": "Z1-IMPACT-05",
+      "src": "/audio/guides/z1-impact-05.mp3",
+      "durationSeconds": 26.25,
+      "bytes": 210668,
+      "sha256": "35f16d677cb7d35aa094871a8c901ebc5c606bdca7179010b2ececf7b72a5c9f",
+      "textSha256": "82992b11b47b8440393a089997892b6937217b68c554ca7a4296a216f1cab0a6"
+    },
+    {
+      "missionId": "Z2-GRAV-06",
+      "src": "/audio/guides/z2-grav-06.mp3",
+      "durationSeconds": 28.57,
+      "bytes": 229292,
+      "sha256": "ee636dd8b4eace0317b2d84a0727ad44ac5535ac93280a0a700664dbb09b0f86",
+      "textSha256": "26e10b88e82c91000d8c869e5f8ddf23e78ee526289364285f30d472334b8100"
+    },
+    {
+      "missionId": "Z2-MOON-07",
+      "src": "/audio/guides/z2-moon-07.mp3",
+      "durationSeconds": 25.8,
+      "bytes": 207020,
+      "sha256": "4428a4789a8b1cce9c9fc77de5ea67ef27c229d6f56dcf68cfdaf5f9c94126f3",
+      "textSha256": "45c2d75fe8d31efbbc5af13bdceb00a4bf6ae1a41e18981f5be96b413958b272"
+    },
+    {
+      "missionId": "Z2-RAD-08",
+      "src": "/audio/guides/z2-rad-08.mp3",
+      "durationSeconds": 25.7,
+      "bytes": 206252,
+      "sha256": "8f4fba2fe8d853097357f7a6de258663dc43a57105ee29efb2e8065dd787ebbe",
+      "textSha256": "76456d4e334acc7cb7ef87fb24da3d0e36ebbb83bae7b7d964721115945fb0bc"
+    },
+    {
+      "missionId": "Z2-WINDOW-09",
+      "src": "/audio/guides/z2-window-09.mp3",
+      "durationSeconds": 27.77,
+      "bytes": 222956,
+      "sha256": "3a803b9ee0121dd130705c72c95a4f22adb3f8dbc632bb9889de6c9df0fb6ef6",
+      "textSha256": "79c889016ba07ad5c6d75b4fe752a862c0a53a0ba2d5407d95e0043f3906e3fb"
+    },
+    {
+      "missionId": "Z2-BH-10",
+      "src": "/audio/guides/z2-bh-10.mp3",
+      "durationSeconds": 28.9,
+      "bytes": 231980,
+      "sha256": "98e5add1096a5dd06d55371805d1f31ee269c17117968370158b2e966c1bf308",
+      "textSha256": "2bc8bb019f1b62fca0152fbeef7d643f67d542961a6c6baf24f42affda0fbfd9"
+    },
+    {
+      "missionId": "Z3-ENGINE-11",
+      "src": "/audio/guides/z3-engine-11.mp3",
+      "durationSeconds": 29.65,
+      "bytes": 237932,
+      "sha256": "245c3e649271027bd88c0732cdc60963855471d85309ae345be015a4cece05aa",
+      "textSha256": "a9a5605929a4c6abe3b745e80a6068dda7779c614824e4d5df6763d007b2f290"
+    },
+    {
+      "missionId": "Z3-MOON-12",
+      "src": "/audio/guides/z3-moon-12.mp3",
+      "durationSeconds": 26.65,
+      "bytes": 213932,
+      "sha256": "a19f2f96ccbf5a477290ec2ba2444088079a20ce915819c26056d4aab127fe0d",
+      "textSha256": "18e5bc0ee30360de4f7556fe5d95f10197dc5246cd793698a2121abdcbb69a6e"
+    },
+    {
+      "missionId": "Z3-PULSAR-13",
+      "src": "/audio/guides/z3-pulsar-13.mp3",
+      "durationSeconds": 26.55,
+      "bytes": 213164,
+      "sha256": "8476254ed764dc1342406dda7f7fd4195ce6748d733da5578fcaf213235e2421",
+      "textSha256": "9f074b2b2c07cf70d3ca13616af859c49077745c78683df8ad1aebb467551172"
+    },
+    {
+      "missionId": "Z3-TELESCOPE-14",
+      "src": "/audio/guides/z3-telescope-14.mp3",
+      "durationSeconds": 25.77,
+      "bytes": 206828,
+      "sha256": "2ef30497b4f2260c321108fc5eae1ecbe57b058a69298b8debd2847e76d7fc7d",
+      "textSha256": "7a529d0dcbf4df4c4acc9433b016cb5994ce098cb33a89761a9dc3e40c83881b"
+    },
+    {
+      "missionId": "Z4-EXO-15",
+      "src": "/audio/guides/z4-exo-15.mp3",
+      "durationSeconds": 28.12,
+      "bytes": 225644,
+      "sha256": "41d38fc0c4a8df8ac301df93f9c12b3d20648ee5d23f90a7234b2e74e44071f4",
+      "textSha256": "b5a28c6e2d8d9414082ebab2ca42cc25b0278b48452e73f699bcd025148e6816"
+    },
+    {
+      "missionId": "Z4-CIV-16",
+      "src": "/audio/guides/z4-civ-16.mp3",
+      "durationSeconds": 27.12,
+      "bytes": 217772,
+      "sha256": "332f9b7dc7abdb723948f55f2c11cca0a029c78b5a205faa87d29395bdb2557b",
+      "textSha256": "490b6018a7b1cd26c730324ad7f741e053f521ad236d3db230f62189364cb2fe"
+    },
+    {
+      "missionId": "Z2-ENERGY-17",
+      "src": "/audio/guides/z2-energy-17.mp3",
+      "durationSeconds": 28.5,
+      "bytes": 228716,
+      "sha256": "e1e8a8156f261de9476567117ea1f0844930c7ba51704023f31c4ac0f7a0cc5b",
+      "textSha256": "7d863c58a404f2215bed61dd91160ce359ac124fe6f1f7ef4b028379b62fd896"
+    },
+    {
+      "missionId": "Z2-WATER-18",
+      "src": "/audio/guides/z2-water-18.mp3",
+      "durationSeconds": 28.5,
+      "bytes": 228716,
+      "sha256": "414c1cd51057ee7ad946b74070a241f354842a8abdae4a5bad481d23cb796998",
+      "textSha256": "f82d919a68d95bd79242aa7b513330af5bddbac4ac4b1d996c2012699d1bb4e7"
+    },
+    {
+      "missionId": "Z3-SCALE-19",
+      "src": "/audio/guides/z3-scale-19.mp3",
+      "durationSeconds": 25.55,
+      "bytes": 205100,
+      "sha256": "6e8dfc687bb652ab56a15396e935d5afa8631f9ebae3dc3024c1e56e4b555f0c",
+      "textSha256": "c18acc6f8a10c9f2bda2b606fea525fb17de22d3a1f2c8a25f6e3cd5d4a05bb3"
+    },
+    {
+      "missionId": "Z3-LIGHT-20",
+      "src": "/audio/guides/z3-light-20.mp3",
+      "durationSeconds": 23.95,
+      "bytes": 192236,
+      "sha256": "825af0ceaaeee522073197280e0740a1e633139f6ab91b412d7b1192be4f4eea",
+      "textSha256": "af0ff6c964b3d05c899cbc7feaf070bb20c73f07df55f9fd8349eb357f36cf82"
+    },
+    {
+      "missionId": "Z3-RELAY-21",
+      "src": "/audio/guides/z3-relay-21.mp3",
+      "durationSeconds": 25.8,
+      "bytes": 207020,
+      "sha256": "67c28c38926e4944219c044a3a30c8e8a4a79206f6fb68eb62815e2a5ea4363e",
+      "textSha256": "4b00e084350588deba2f4a985a076698c3bbad4d0bd5c5805d888e0e2729ccc8"
+    },
+    {
+      "missionId": "Z3-NOZZLE-22",
+      "src": "/audio/guides/z3-nozzle-22.mp3",
+      "durationSeconds": 27.4,
+      "bytes": 219884,
+      "sha256": "4d28f37da13fee3231bb2aa420f39f0130c400bd56f76f2f310b0165703161e1",
+      "textSha256": "92fc8f333feaacfba818d594ca60a8a0af0dad88e3ec7b445827095f797fcac2"
+    },
+    {
+      "missionId": "Z4-TRANSIT-23",
+      "src": "/audio/guides/z4-transit-23.mp3",
+      "durationSeconds": 29.32,
+      "bytes": 235244,
+      "sha256": "062bd093c1852b70505d25cf7ecda941ae3c10cc09d90c879cea619ebf79e6e1",
+      "textSha256": "592ffea3559b479b318f54675277646c0db6a00e62084b46d529eb2493a82de8"
+    },
+    {
+      "missionId": "Z4-VOTE-24",
+      "src": "/audio/guides/z4-vote-24.mp3",
+      "durationSeconds": 27.2,
+      "bytes": 218348,
+      "sha256": "690ac48a06a872657effd839f3157a81a9dffdd6e0980f4ec83207e0d8404adb",
+      "textSha256": "34ac3d398828b343cf5d712104cd62dd1ea228106964374103287e7bfb182501"
+    }
+  ]
+}

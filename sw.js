@@ -1,6 +1,6 @@
-self.__PRECACHE_MANIFEST=["/_next/static/chunks/168-5c48992cd3e6035a.js","/_next/static/chunks/304-5fe35dfb0e0ac542.js","/_next/static/chunks/306-05f02d5926ec0625.js","/_next/static/chunks/4-ef777c68f39f623b.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/523-102f9b7106367f3a.js","/_next/static/chunks/526-ca5c152d2e7b8fbe.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/805-8228db14f3f65d7e.js","/_next/static/chunks/app/activate/page-fa2e2c6cb6d4c7e0.js","/_next/static/chunks/app/layout-49ca6fa9a364a24b.js","/_next/static/chunks/app/map/page-00d192606a40f6c4.js","/_next/static/chunks/app/mission/[missionId]/page-37c964b1463e088e.js","/_next/static/chunks/app/page-866b27185009493a.js","/_next/static/chunks/app/profile/[sessionId]/page-2b732ec79e0fcc64.js","/_next/static/chunks/app/scan/page-e040017232464ea2.js","/_next/static/chunks/app/spirits/page-246ea3d527760871.js","/_next/static/chunks/b536a0f1-c5b57b7e6ff4dac8.js","/_next/static/chunks/bd904a5c-ad7f95bc21f7a5e3.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-b24afea216126e8a.js","/_next/static/css/6351c66549df5a8b.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
+self.__PRECACHE_MANIFEST=["/_next/static/chunks/168-7c5d41a1b76b8549.js","/_next/static/chunks/306-05f02d5926ec0625.js","/_next/static/chunks/4-ef777c68f39f623b.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/523-102f9b7106367f3a.js","/_next/static/chunks/526-14c619b80ebadf7e.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/608-e777f9d9e267644d.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/805-8228db14f3f65d7e.js","/_next/static/chunks/app/activate/page-bb6a61965924c14a.js","/_next/static/chunks/app/layout-34d0fd54999a7282.js","/_next/static/chunks/app/map/page-f768fb67c28b9b09.js","/_next/static/chunks/app/mission/[missionId]/page-d4f9ccefa5f8ae57.js","/_next/static/chunks/app/page-227e34c93fbadcd5.js","/_next/static/chunks/app/profile/[sessionId]/page-06cf4bb258e3382b.js","/_next/static/chunks/app/scan/page-e040017232464ea2.js","/_next/static/chunks/app/spirits/page-246ea3d527760871.js","/_next/static/chunks/b536a0f1-c5b57b7e6ff4dac8.js","/_next/static/chunks/bd904a5c-ad7f95bc21f7a5e3.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-b24afea216126e8a.js","/_next/static/css/9134f8b1ea8ea383.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
 const CACHE_PREFIX = "earth-mission-ar-v";
-const CACHE_VERSION = 27;
+const CACHE_VERSION = 28;
 const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
 const RETAINED_CACHE_GENERATIONS = 2;
 const GENERATED_PRECACHE_URLS = self.__PRECACHE_MANIFEST ?? [];
@@ -29,6 +29,10 @@ const CORE_PRECACHE_URLS = [
   "/spirits/models/suixing.glb",
   "/spirits/maideng.webp",
   "/spirits/models/maideng.glb",
+  "/audio/guides/z1-sun-01.mp3",
+  "/audio/guides/z1-hab-02.mp3",
+  "/audio/guides/z1-layer-03.mp3",
+  "/audio/guides/z1-impact-05.mp3",
   "/globe.svg",
 ].map(withBasePath);
 
@@ -101,7 +105,7 @@ self.addEventListener("activate", (event) => {
 });
 
 function isStaticAsset(url) {
-  return /\.(?:js|css|png|jpg|jpeg|svg|webp|ico|mind|glb|wasm|woff2?)$/i.test(url.pathname);
+  return /\.(?:js|css|png|jpg|jpeg|svg|webp|ico|mind|glb|mp3|m4a|ogg|wav|wasm|woff2?)$/i.test(url.pathname);
 }
 
 async function cacheFirst(request) {

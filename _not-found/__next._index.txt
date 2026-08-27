@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
 2:I[7121,[],""]
 3:I[4581,[],""]
-4:I[1496,["177","static/chunks/app/layout-49ca6fa9a364a24b.js"],"GameAudioControls"]
-:HL["/earth-mission-ar/_next/static/css/6351c66549df5a8b.css","style"]
-0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/earth-mission-ar/_next/static/css/6351c66549df5a8b.css","precedence":"next"}]],["$","html",null,{"lang":"zh-CN","className":"__variable_1dc9c3 __variable_3eb200","children":["$","body",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\nif (\"serviceWorker\" in navigator) {\n  navigator.serviceWorker.register(\"/earth-mission-ar/sw.js\", {\n    scope: \"/earth-mission-ar/\",\n    updateViaCache: \"none\"\n  }).catch(() => {});\n}"}}],["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}],["$","$L4",null,{}]]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"YZW935EBuWYjo8xUgjvn1"}
+4:I[1496,["177","static/chunks/app/layout-34d0fd54999a7282.js"],"GameAudioControls"]
+:HL["/earth-mission-ar/_next/static/css/9134f8b1ea8ea383.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/earth-mission-ar/_next/static/css/9134f8b1ea8ea383.css","precedence":"next"}]],["$","html",null,{"lang":"zh-CN","className":"__variable_1dc9c3 __variable_3eb200","children":["$","body",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\nif (\"serviceWorker\" in navigator) {\n  navigator.serviceWorker.register(\"/earth-mission-ar/sw.js\", {\n    scope: \"/earth-mission-ar/\",\n    updateViaCache: \"none\"\n  }).catch(() => {});\n}"}}],["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}],["$","$L4",null,{}]]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"O2kO7QFYBnEqtXwn6_QEU"}
