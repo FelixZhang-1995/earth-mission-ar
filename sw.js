@@ -1,6 +1,6 @@
 self.__PRECACHE_MANIFEST=["/_next/static/chunks/168-7c5d41a1b76b8549.js","/_next/static/chunks/306-05f02d5926ec0625.js","/_next/static/chunks/4-ef777c68f39f623b.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/523-102f9b7106367f3a.js","/_next/static/chunks/526-14c619b80ebadf7e.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/608-e153e83f94bdaa62.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/805-8228db14f3f65d7e.js","/_next/static/chunks/app/activate/page-bb6a61965924c14a.js","/_next/static/chunks/app/layout-34d0fd54999a7282.js","/_next/static/chunks/app/map/page-f768fb67c28b9b09.js","/_next/static/chunks/app/mission/[missionId]/page-d4f9ccefa5f8ae57.js","/_next/static/chunks/app/page-227e34c93fbadcd5.js","/_next/static/chunks/app/profile/[sessionId]/page-06cf4bb258e3382b.js","/_next/static/chunks/app/scan/page-e040017232464ea2.js","/_next/static/chunks/app/spirits/page-246ea3d527760871.js","/_next/static/chunks/b536a0f1-c5b57b7e6ff4dac8.js","/_next/static/chunks/bd904a5c-ad7f95bc21f7a5e3.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-b24afea216126e8a.js","/_next/static/css/a8e9e1919256c45d.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
 const CACHE_PREFIX = "earth-mission-ar-v";
-const CACHE_VERSION = 33;
+const CACHE_VERSION = 34;
 const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
 const RETAINED_CACHE_GENERATIONS = 3;
 const FORCE_REFRESH_ASSET_SUFFIXES = [
@@ -151,8 +151,10 @@ async function cacheFirst(request) {
 
 async function networkFirst(request) {
   const cache = await caches.open(CACHE_NAME);
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 8000);
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { signal: controller.signal });
     if (response.ok) {
       await cache.put(request, response.clone());
       const url = new URL(request.url);
@@ -166,13 +168,29 @@ async function networkFirst(request) {
     const pathname = url.pathname;
     const alternatePath = pathname.endsWith("/") ? pathname.slice(0, -1) : `${pathname}/`;
     const appRootUrl = new URL(withBasePath("/"), self.location.origin).href;
-    return (
+    const current = (
       (await cache.match(request)) ||
       (await cache.match(`${url.origin}${pathname}`)) ||
       (await cache.match(`${url.origin}${alternatePath}`)) ||
-      (await cache.match(appRootUrl)) ||
-      Response.error()
+      (await cache.match(appRootUrl))
     );
+    if (current) return current;
+
+    const previousCacheNames = (await caches.keys())
+      .filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME)
+      .sort((left, right) => Number(right.slice(CACHE_PREFIX.length)) - Number(left.slice(CACHE_PREFIX.length)));
+    for (const cacheName of previousCacheNames) {
+      const previous = await caches.open(cacheName);
+      const fallback =
+        (await previous.match(request)) ||
+        (await previous.match(`${url.origin}${pathname}`)) ||
+        (await previous.match(`${url.origin}${alternatePath}`)) ||
+        (await previous.match(appRootUrl));
+      if (fallback) return fallback;
+    }
+    return Response.error();
+  } finally {
+    clearTimeout(timeout);
   }
 }
 
