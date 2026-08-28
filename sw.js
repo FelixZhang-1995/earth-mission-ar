@@ -1,6 +1,6 @@
-self.__PRECACHE_MANIFEST=["/_next/static/chunks/168-5154214a45d0a454.js","/_next/static/chunks/204-283a36c29a610e1b.js","/_next/static/chunks/341-4891c659ef0a96d1.js","/_next/static/chunks/423-13d9170ac0edd74e.js","/_next/static/chunks/496-136cb470a9dc75d9.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/682-90b4ebc33ed27798.js","/_next/static/chunks/741-ffd5fcb42977f7dd.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/805-8228db14f3f65d7e.js","/_next/static/chunks/908-dcc05b764102b961.js","/_next/static/chunks/app/activate/page-5f1edff59d0bde71.js","/_next/static/chunks/app/layout-f37796a49fb0974b.js","/_next/static/chunks/app/map/page-836164fd1b2bb6a7.js","/_next/static/chunks/app/mission/[missionId]/page-af1a03eba08d6806.js","/_next/static/chunks/app/page-475c1fe2db6af620.js","/_next/static/chunks/app/profile/[sessionId]/page-1067ec5028eae803.js","/_next/static/chunks/app/scan/page-7fb5aa46d5a01c9b.js","/_next/static/chunks/app/spirits/page-b5f144a98d61c9f8.js","/_next/static/chunks/b536a0f1-c5b57b7e6ff4dac8.js","/_next/static/chunks/bd904a5c-ad7f95bc21f7a5e3.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-b24afea216126e8a.js","/_next/static/css/3bb1031df7e7ab12.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
+self.__PRECACHE_MANIFEST=["/_next/static/chunks/168-5154214a45d0a454.js","/_next/static/chunks/204-283a36c29a610e1b.js","/_next/static/chunks/255-659121c9c1638940.js","/_next/static/chunks/341-4891c659ef0a96d1.js","/_next/static/chunks/496-136cb470a9dc75d9.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/582-9cabb33f96a1b36f.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/654-9a11a809ba20cae1.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/908-dcc05b764102b961.js","/_next/static/chunks/app/activate/page-14e37fbf065498ab.js","/_next/static/chunks/app/layout-f37796a49fb0974b.js","/_next/static/chunks/app/map/page-9a7d6320b58f39fb.js","/_next/static/chunks/app/mission/[missionId]/page-4cdff94e9d3f673f.js","/_next/static/chunks/app/page-29fc082488d46ffb.js","/_next/static/chunks/app/profile/[sessionId]/page-19f0e20d9ee424ed.js","/_next/static/chunks/app/scan/page-7fb5aa46d5a01c9b.js","/_next/static/chunks/app/spirits/page-df665cca2ee26e65.js","/_next/static/chunks/b536a0f1-c5b57b7e6ff4dac8.js","/_next/static/chunks/bd904a5c-ad7f95bc21f7a5e3.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-4c9da91af4b06e02.js","/_next/static/css/f04704ef9b1ddc1e.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
 const CACHE_PREFIX = "earth-mission-ar-v";
-const CACHE_VERSION = 50;
+const CACHE_VERSION = 51;
 const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
 const RETAINED_CACHE_GENERATIONS = 3;
 const FORCE_REFRESH_ASSET_SUFFIXES = [
@@ -13,7 +13,6 @@ const FORCE_REFRESH_ASSET_SUFFIXES = [
   "/_next/static/chunks/app/spirits/page-246ea3d527760871.js",
   "/_next/static/css/a8e9e1919256c45d.css",
 ];
-const GENERATED_PRECACHE_URLS = self.__PRECACHE_MANIFEST ?? [];
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const withBasePath = (path) => {
   if (!BASE_PATH) return path;
@@ -22,38 +21,16 @@ const withBasePath = (path) => {
 };
 const CORE_PRECACHE_URLS = [
   "/",
-  "/activate",
   "/map",
-  "/scan",
-  "/spirits",
   "/profile/active",
   "/mission/Z1-SUN-01",
-  "/mission/Z1-HAB-02",
-  "/mission/Z1-IMPACT-05",
   "/brand/beijing-planetarium-logo.png",
   "/spirits/yaohe.webp",
-  "/spirits/models/yaohe.glb",
-  "/spirits/qihuan.webp",
-  "/spirits/models/qihuan.glb",
-  "/spirits/suixing.webp",
-  "/spirits/models/suixing.glb",
-  "/spirits/maideng.webp",
-  "/spirits/models/maideng.glb",
-  "/audio/guides/z1-sun-01.mp3",
-  "/audio/guides/z1-hab-02.mp3",
-  "/audio/guides/z1-layer-03.mp3",
-  "/audio/guides/z1-impact-05.mp3",
+  "/manifest.webmanifest",
   "/globe.svg",
 ].map(withBasePath);
 
-const GENERATED_APP_SHELL_URLS = GENERATED_PRECACHE_URLS.filter(
-  (url) =>
-    (url.startsWith("/_next/static/") &&
-      !url.endsWith("/_buildManifest.js") &&
-      !url.endsWith("/_ssgManifest.js")) ||
-    url === "/manifest.webmanifest",
-).map(withBasePath);
-const PRECACHE_URLS = [...new Set([...CORE_PRECACHE_URLS, ...GENERATED_APP_SHELL_URLS])];
+const PRECACHE_URLS = [...new Set(CORE_PRECACHE_URLS)];
 
 function shouldForceRefresh(url) {
   const pathname = new URL(url, self.location.origin).pathname;
