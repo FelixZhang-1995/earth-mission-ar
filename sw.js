@@ -1,6 +1,6 @@
 self.__PRECACHE_MANIFEST=["/_next/static/chunks/168-5154214a45d0a454.js","/_next/static/chunks/288-97519ee56ce07011.js","/_next/static/chunks/341-4891c659ef0a96d1.js","/_next/static/chunks/4bd1b696-215e5051988c3dde.js","/_next/static/chunks/602-0ef2c323df0fdff2.js","/_next/static/chunks/646-6d5c167ea04a0f59.js","/_next/static/chunks/741-ffd5fcb42977f7dd.js","/_next/static/chunks/747-43fbe99c1fa50104.js","/_next/static/chunks/794-d4ec4c159b8d3a7e.js","/_next/static/chunks/805-8228db14f3f65d7e.js","/_next/static/chunks/963-cc92fefee93cb7f5.js","/_next/static/chunks/app/activate/page-af2469096ba2a96c.js","/_next/static/chunks/app/layout-34d0fd54999a7282.js","/_next/static/chunks/app/map/page-1145e69bbc054b14.js","/_next/static/chunks/app/mission/[missionId]/page-d113de809e812498.js","/_next/static/chunks/app/page-81ceb94b156ebd86.js","/_next/static/chunks/app/profile/[sessionId]/page-a3d6f63596b90ba3.js","/_next/static/chunks/app/scan/page-fd48934361e7946c.js","/_next/static/chunks/app/spirits/page-8f9482018dd6a825.js","/_next/static/chunks/b536a0f1-c5b57b7e6ff4dac8.js","/_next/static/chunks/bd904a5c-ad7f95bc21f7a5e3.js","/_next/static/chunks/main-app-8ba8aced763bc972.js","/_next/static/chunks/polyfills-42372ed130431b0a.js","/_next/static/chunks/webpack-b24afea216126e8a.js","/_next/static/css/0e6d99b53a4e0bf3.css","/_next/static/media/22a5144ee8d83bca-s.p.woff2","/_next/static/media/7d4881bb7e1bf84d-s.p.woff2","/manifest.webmanifest"];
 const CACHE_PREFIX = "earth-mission-ar-v";
-const CACHE_VERSION = 47;
+const CACHE_VERSION = 48;
 const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
 const RETAINED_CACHE_GENERATIONS = 3;
 const FORCE_REFRESH_ASSET_SUFFIXES = [
@@ -62,19 +62,12 @@ function shouldForceRefresh(url) {
 
 async function cacheUrl(cache, url) {
   const forceRefresh = shouldForceRefresh(url);
-  if (url.includes("/_next/static/") && !forceRefresh) {
-    const existing = await caches.match(url);
-    if (existing) {
-      await cache.put(url, existing.clone());
-      return;
-    }
-  }
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 8000);
   try {
     const pathname = new URL(url, self.location.origin).pathname;
     const isDocumentShell = !/\.[a-z0-9]+$/i.test(pathname);
-    const preloadUrl = isDocumentShell || forceRefresh
+    const preloadUrl = isDocumentShell || forceRefresh || url.includes("/_next/static/")
       ? `${url}${url.includes("?") ? "&" : "?"}__pwa_preload=${CACHE_VERSION}`
       : url;
     const response = await fetch(preloadUrl, { signal: controller.signal, cache: "no-store" });
