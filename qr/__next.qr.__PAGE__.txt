@@ -2,5 +2,5 @@
 2:I[4734,["602","static/chunks/602-0ef2c323df0fdff2.js","805","static/chunks/805-8228db14f3f65d7e.js","168","static/chunks/168-5154214a45d0a454.js","286","static/chunks/286-f51dceeb37fa3c01.js","128","static/chunks/app/qr/page-5e5d980a9e469fee.js"],"QRCodeDesk"]
 3:I[484,[],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"OIc_48ut6kkM6-vwHgTai"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"p8ljNfL9zws576YDEK7PJ"}
 5:null
