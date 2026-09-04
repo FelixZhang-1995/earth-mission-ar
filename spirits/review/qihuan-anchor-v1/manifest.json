@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "kind": "character-review-target",
+  "markerId": "QB-01",
+  "spiritId": "SP-LIFE-QIHUAN",
+  "missionId": "Z1-HAB-02",
+  "candidate": {
+    "id": "qihuan-v15",
+    "modelSrc": "/spirits/review/qihuan-motion-v15/qihuan-b.b02201c0b474.glb",
+    "sha256": "b02201c0b47492594cde6b4ee10f264095bc62c84f0f1e206948f0d71de2fe59"
+  },
+  "source": {
+    "path": "artwork-source/ai3d/qihuan-expression-v8/b-front.png",
+    "sha256": "8c978bd530d0f72d2441c2ee6b0b649046d70af912b27c8603d6a72fb376647e",
+    "kind": "original-generated-front-reference",
+    "approved": false
+  },
+  "image": {
+    "src": "/spirits/review/qihuan-anchor-v1/target.ea727e6da325.png",
+    "sha256": "ea727e6da325f24a5a39ced2a3d951adb8386f36c19284d66f26321c2c9c66a5",
+    "bytes": 493390,
+    "width": 960,
+    "height": 1358
+  },
+  "preview": {
+    "src": "/spirits/review/qihuan-anchor-v1/target.8fe76b54d81a.webp",
+    "sha256": "8fe76b54d81ad8eccf43054763c35d3e681385914c6a54a7f659edd747b7962d",
+    "bytes": 44758,
+    "width": 960,
+    "height": 1358
+  },
+  "target": {
+    "src": "/spirits/review/qihuan-anchor-v1/target.e0e368d276a8.mind",
+    "sha256": "e0e368d276a8dcd2dd2649490a3ccbf731cc41c2513741942ea4935204683e4a",
+    "bytes": 384573,
+    "dimensions": [
+      960,
+      1358
+    ],
+    "formatVersion": 2
+  },
+  "print": {
+    "src": "/spirits/review/qihuan-anchor-v1/qihuan-b-review-a4.bc97fff7d231.pdf",
+    "sha256": "bc97fff7d2316125ba73fdb9a0ff1d7d5c8c53c518bf93619745dfda4070ddcd",
+    "bytes": 1259880,
+    "paperMm": [
+      210,
+      297
+    ],
+    "imageMm": [
+      190,
+      268.7708333333333
+    ]
+  },
+  "features": {
+    "matching": [
+      205,
+      210,
+      197,
+      185,
+      173,
+      154,
+      138,
+      110,
+      59,
+      38,
+      27
+    ],
+    "tracking": [
+      25,
+      15
+    ]
+  },
+  "publishReady": false,
+  "physicalRecognitionVerified": false,
+  "hasNavigationQr": false,
+  "generatorSha256": "511250dc0398205c68c44ceb1ae26c39ea1103501aa02ac07e87ff714b05a60b"
+}

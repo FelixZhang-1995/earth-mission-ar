@@ -11,10 +11,10 @@
     {
       "missionId": "Z1-SUN-01",
       "src": "/audio/guides/z1-sun-01.mp3",
-      "durationSeconds": 34.23,
-      "bytes": 274604,
-      "sha256": "5b79b9994a72617c20c35ad80ecb750c3c94c15f14414f0e4bd83889d4410f11",
-      "textSha256": "60a64604bcd14ddebf4821b3db32d85adcb1c68f6459187a73c3fb3e83e650d6"
+      "durationSeconds": 52.42,
+      "bytes": 420140,
+      "sha256": "8c47543f8447d43ca707a4a4045db65a6a15f629143d33ddb3825fd603c57362",
+      "textSha256": "4318a081078893afbcc30fc1ed1b52b1ff4f6eebad219a914a26496befd7d1c8"
     },
     {
       "missionId": "Z1-HAB-02",

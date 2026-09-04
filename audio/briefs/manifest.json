@@ -1,0 +1,205 @@
+{
+  "kind": "brief",
+  "generator": "Kokoro-82M",
+  "modelSource": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "license": "Apache-2.0",
+  "voice": "zf_xiaoxiao",
+  "modelSha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "voiceSha256": "cfaf6f2ded1ee56f1ff94fcd2b0e6cdf32e5b794bdc05b44e7439d44aef5887c",
+  "sampleRate": 24000,
+  "bitRateKbps": 64,
+  "tracks": [
+    {
+      "missionId": "Z1-SUN-01",
+      "src": "/audio/briefs/z1-sun-01.mp3",
+      "durationSeconds": 18.1,
+      "bytes": 145580,
+      "sha256": "cab6c7589423280653c0dff7377fe6fb1488c7ab542e57a7ba76142d188dbe95",
+      "textSha256": "e205196805e869fab51219065da734b2779ff1cccdaa0af6377aaec6cd1861e5"
+    },
+    {
+      "missionId": "Z1-HAB-02",
+      "src": "/audio/briefs/z1-hab-02.mp3",
+      "durationSeconds": 13.78,
+      "bytes": 110828,
+      "sha256": "037ab320cd38e7ce3e7e785839f48ead4bc8c0df7d52b2e9db11318f497b8564",
+      "textSha256": "229034dfb0ec98915df21ba7554b20c0b811cf4222d61b6c365b6b51ec8d3d57"
+    },
+    {
+      "missionId": "Z1-LAYER-03",
+      "src": "/audio/briefs/z1-layer-03.mp3",
+      "durationSeconds": 14.1,
+      "bytes": 113516,
+      "sha256": "78029285f9478bbc95ccf94db49e89e9893bab264685ae9638a5498d50532e3c",
+      "textSha256": "fdafe16925eb18ce73a3748a6e222e34790ed41beaa4d66c20deae9412c971bb"
+    },
+    {
+      "missionId": "Z1-AST-04",
+      "src": "/audio/briefs/z1-ast-04.mp3",
+      "durationSeconds": 12.32,
+      "bytes": 99308,
+      "sha256": "56993e7e9c0cd113a728d85bec2a7d7981f4ad65140966473da32b248dcae21a",
+      "textSha256": "345dbb3d6485bf7b8358187e60ee9470141fcbf42a82e21508eabeb5ba87708b"
+    },
+    {
+      "missionId": "Z1-IMPACT-05",
+      "src": "/audio/briefs/z1-impact-05.mp3",
+      "durationSeconds": 14.93,
+      "bytes": 120044,
+      "sha256": "fc54c7b4f3065650d399eec3ab0f8bb82f13fceede002df2c0a406c4734852b5",
+      "textSha256": "a9e33ce9b4ecc259e7119356d60322045d13fccd6844c03081a076a8deaf920b"
+    },
+    {
+      "missionId": "Z2-GRAV-06",
+      "src": "/audio/briefs/z2-grav-06.mp3",
+      "durationSeconds": 11.3,
+      "bytes": 91052,
+      "sha256": "d8f85680380cbfd70638dfdf25ada7b336b22ec9363749510677a20d8e2908af",
+      "textSha256": "6e3f0bfd3710f22c82a84b26772670b95d9025438a9fc5cced2363c0a9663874"
+    },
+    {
+      "missionId": "Z2-MOON-07",
+      "src": "/audio/briefs/z2-moon-07.mp3",
+      "durationSeconds": 13.05,
+      "bytes": 105068,
+      "sha256": "b95a92e7b7001ceb0f41efcd4b2b702e6fac31e1467ad5ab2685975b7d59f77e",
+      "textSha256": "3929940195982f61564638d5df51e559ce19ff83f65faf0b3797aeffdc0880ff"
+    },
+    {
+      "missionId": "Z2-RAD-08",
+      "src": "/audio/briefs/z2-rad-08.mp3",
+      "durationSeconds": 12.07,
+      "bytes": 97388,
+      "sha256": "d7102a3e71ffda44f191ea51c18a5b65896c3f11588029829b3f21d23cea5871",
+      "textSha256": "a7de378616952f3488f8de238267a16984bd669c3be5f9f4ab38d35784c1a480"
+    },
+    {
+      "missionId": "Z2-WINDOW-09",
+      "src": "/audio/briefs/z2-window-09.mp3",
+      "durationSeconds": 14.3,
+      "bytes": 115052,
+      "sha256": "ec9b04848126485a74bf06b02066e2128cba16823d672043dcf0142cdeae1cf4",
+      "textSha256": "3ed6af3a52e3a8b27007d5788988c7b10604e9f9252406d1fd4ea5caf0022ad7"
+    },
+    {
+      "missionId": "Z2-BH-10",
+      "src": "/audio/briefs/z2-bh-10.mp3",
+      "durationSeconds": 12.2,
+      "bytes": 98348,
+      "sha256": "05af8e2b661d73bb1760b2cf65c50bf6fe045f0d96db4f254031f1171163ea38",
+      "textSha256": "f2ddfef25ecebb6133880aef70203009181445e1937ca89b10d919a8aecc81ff"
+    },
+    {
+      "missionId": "Z3-ENGINE-11",
+      "src": "/audio/briefs/z3-engine-11.mp3",
+      "durationSeconds": 11.68,
+      "bytes": 94124,
+      "sha256": "56d13eb94f9b85aa47fed22ee5a08e9443744c8e8ac87ed1b46fd1dbb7d03ec7",
+      "textSha256": "05504337a2a49cd7044b803a1843f55c3928f121c834c11a12c97f5b136af9df"
+    },
+    {
+      "missionId": "Z3-MOON-12",
+      "src": "/audio/briefs/z3-moon-12.mp3",
+      "durationSeconds": 12.43,
+      "bytes": 100076,
+      "sha256": "25c411765fb2318c93241020a92c1a5b026d82002fafad7be505f315b3d7a5fe",
+      "textSha256": "58d3de999df5a6fc5ddd2b9f008b7f1e2b0690c0be30106e480d91c19675ca7e"
+    },
+    {
+      "missionId": "Z3-PULSAR-13",
+      "src": "/audio/briefs/z3-pulsar-13.mp3",
+      "durationSeconds": 10.75,
+      "bytes": 86636,
+      "sha256": "f1e170762e19bcfe2ed480bd7a9fdb8e119939c1b37ab5a5739fc40f392301fd",
+      "textSha256": "a6e2d1e3bdcfaa67b624563ca2f5b7f7509efe4f15a16e7ea9285618e7db0181"
+    },
+    {
+      "missionId": "Z3-TELESCOPE-14",
+      "src": "/audio/briefs/z3-telescope-14.mp3",
+      "durationSeconds": 11.95,
+      "bytes": 96236,
+      "sha256": "d93868971562d0675e94c8ba61b783bbb39ce6d4b86669e4bc06c4f34472cb66",
+      "textSha256": "14f47301e7e5eda6dce1215903d060ebdccb13e146e51cc5d84d11c367f6f2a9"
+    },
+    {
+      "missionId": "Z4-EXO-15",
+      "src": "/audio/briefs/z4-exo-15.mp3",
+      "durationSeconds": 12.7,
+      "bytes": 102380,
+      "sha256": "11fb09f2c1e51fdd0f01c2147884e4c93d3aec7715f5fbc29b688c9caba4c130",
+      "textSha256": "d0bcf8379e77134b2b39aca09cda2b4f5304256782bd50b253a64fa034886f8c"
+    },
+    {
+      "missionId": "Z4-CIV-16",
+      "src": "/audio/briefs/z4-civ-16.mp3",
+      "durationSeconds": 14.45,
+      "bytes": 116396,
+      "sha256": "bf137242ca7c0d43c0e4b4d8dda183edb3ca8b1924dfb77875358a4c1ea591e2",
+      "textSha256": "60833d3889c8ca2fadb07b880f811bcf9777885a3c9a2746d37027c81d942c10"
+    },
+    {
+      "missionId": "Z2-ENERGY-17",
+      "src": "/audio/briefs/z2-energy-17.mp3",
+      "durationSeconds": 17.43,
+      "bytes": 140204,
+      "sha256": "f075d7a35be1e589a3404616babb8371ad8120837ba6bf1a20c31e249d25df74",
+      "textSha256": "452a328c566377140096be9923107d93d92384f0ed7a9fbf16ea3b43ecde5c6e"
+    },
+    {
+      "missionId": "Z2-WATER-18",
+      "src": "/audio/briefs/z2-water-18.mp3",
+      "durationSeconds": 14.35,
+      "bytes": 115436,
+      "sha256": "eb78fcbd405a290a877f1c1f7516cc09970c27ba4228b238b71a87578b20bee6",
+      "textSha256": "bbb762165a2172755a9e3f069d7224e0bbe405de71ff6c2270a42f9f9a4be10a"
+    },
+    {
+      "missionId": "Z3-SCALE-19",
+      "src": "/audio/briefs/z3-scale-19.mp3",
+      "durationSeconds": 13.03,
+      "bytes": 104876,
+      "sha256": "5b18270612006630cfcfa12fc5c69f99761566dc6bd58aa668214f361328b435",
+      "textSha256": "0536b987a0f7b8a8aeaa81ce165e2f15fd8485ac8f11405c1cd4f47de36ff57c"
+    },
+    {
+      "missionId": "Z3-LIGHT-20",
+      "src": "/audio/briefs/z3-light-20.mp3",
+      "durationSeconds": 13.65,
+      "bytes": 109868,
+      "sha256": "ce4ac7e18750d42fbbf83bb9962fd3437bf65310e18e6a88c20f54e274a59c1a",
+      "textSha256": "e2ca89ee9fa5d032933ca13be88c3bc0603aa8a3ed23772181c0c0c1ee1e6e0a"
+    },
+    {
+      "missionId": "Z3-RELAY-21",
+      "src": "/audio/briefs/z3-relay-21.mp3",
+      "durationSeconds": 12.5,
+      "bytes": 100652,
+      "sha256": "f47377637ed69e0f3bb5c98060a435d24baabc58969494e39d9e0c69bca13ca5",
+      "textSha256": "9f123b5796b0034faa251a42bae551a948b11fbaf3f167cd899c3b58f85415cb"
+    },
+    {
+      "missionId": "Z3-NOZZLE-22",
+      "src": "/audio/briefs/z3-nozzle-22.mp3",
+      "durationSeconds": 15.0,
+      "bytes": 120620,
+      "sha256": "4f0fec82e2ea80856406a870982414bb01f6c2b4b533fe35099e6a43f38c1522",
+      "textSha256": "3e99f232a62e4987a1108d4bbc4a1299decfb55dd1d5b253d25bed478cf09e26"
+    },
+    {
+      "missionId": "Z4-TRANSIT-23",
+      "src": "/audio/briefs/z4-transit-23.mp3",
+      "durationSeconds": 16.07,
+      "bytes": 129260,
+      "sha256": "3e8e1c495bd90f77e879576829d236ba9e6e5fa0962f0b91a4fd927cb64b7c8c",
+      "textSha256": "e17548c07179a2f6fe1a66087c2168c4041236d613ee030868e34c470e697ae5"
+    },
+    {
+      "missionId": "Z4-VOTE-24",
+      "src": "/audio/briefs/z4-vote-24.mp3",
+      "durationSeconds": 16.2,
+      "bytes": 130220,
+      "sha256": "3cbe7218c8c09ec1b6ff5c1e9e090036f80005924557d33590db4c7a307e70f1",
+      "textSha256": "a2698165f3cfa3d83137c92cb9159ae97e9b432959af1e40c0831fefe563310a"
+    }
+  ]
+}
